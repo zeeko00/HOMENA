@@ -3,42 +3,317 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#7A1C1C">
+<meta name="theme-color" content="#660000">
 <title>هومنا | Homena Group</title>
+
 <style>
-:root{--wine:#7A1C1C;--dark:#660000;--light:#9E3B3B;--soft:#f7f3f3}
-*{box-sizing:border-box}body{margin:0;background:var(--soft);color:#242020;font-family:Tahoma,Arial,sans-serif}
-main{width:min(100% - 28px,520px);margin:26px auto 40px}
-header{background:linear-gradient(145deg,var(--dark),var(--wine) 65%,var(--light));color:#fff;border-radius:22px;padding:30px 22px;text-align:center}
-.logo{width:78px;height:78px;border:1px solid #ffffff80;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;font-size:22px;font-weight:bold}
-h1{font-size:27px;margin:8px 0}header p{margin:8px 0;line-height:1.7}.en{direction:ltr;font-size:13px}
-section{background:#fff;border-radius:18px;padding:18px;margin-top:15px}
-h2{font-size:17px;color:var(--wine);margin:0 0 13px}.links{display:grid;gap:10px}
-a.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 15px;border:1px solid #eadede;border-radius:12px;text-decoration:none;color:var(--dark);font-weight:700;background:#fff}
-a.btn small{font-weight:400;color:#777;direction:ltr}.address{line-height:1.9;margin:0;font-size:14px}
-.contact{background:var(--wine)!important;color:white!important;border-color:var(--wine)!important}
-footer{text-align:center;color:#777;font-size:12px;padding:18px 8px;line-height:1.7}
-</style></head><body><main>
-<header><div class="logo">H</div><h1>هومنا</h1><div class="en">HOMENA GROUP</div><p>كل روابطنا وخدماتنا في مكان واحد</p></header>
-<section><h2>تسوّق وتعرّف علينا</h2><div class="links">
-<a class="btn" href="https://homenaiq.com/" target="_blank">الموقع الرسمي <small>Website ↗</small></a>
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.homena.store" target="_blank">تطبيق أندرويد <small>Google Play ↗</small></a>
-<a class="btn" href="https://apps.apple.com/iq/app/%D9%87%D9%88%D9%85%D9%86%D8%A7-homena/id6825592243?l=ar" target="_blank">تطبيق آيفون <small>App Store ↗</small></a>
-</div></section>
-<section><h2>تابعونا على مواقع التواصل</h2><div class="links">
-<a class="btn" href="https://www.instagram.com/homena.21/" target="_blank">إنستغرام <small>@homena.21 ↗</small></a>
-<a class="btn" href="https://www.facebook.com/share/1KCzt2sTtB/" target="_blank">فيسبوك <small>Facebook ↗</small></a>
-<a class="btn" href="https://www.tiktok.com/@homena43" target="_blank">تيك توك <small>@homena43 ↗</small></a>
-</div></section>
-<section><h2>أرقام التواصل</h2><div class="links">
-<a class="btn contact" href="tel:07717408640">الإدارة <small dir="ltr">0771 740 8640</small></a>
-<a class="btn" href="tel:07708178272">المبيعات <small dir="ltr">0770 817 8272</small></a>
-<a class="btn" href="tel:07770651779">المبيعات <small dir="ltr">0777 065 1779</small></a>
-<a class="btn" href="tel:07702461179">الصيانة <small dir="ltr">0770 246 1179</small></a>
-<a class="btn" href="tel:07770651779">الرقم العام <small dir="ltr">0777 065 1779</small></a>
-<a class="btn" href="mailto:info@homenaiq.com">البريد الإلكتروني <small>info@homenaiq.com</small></a>
-</div></section>
-<section><h2>زوروا معرضنا</h2><p class="address">بغداد – الأمين الثانية، مدخل مدرسة الجمهورية، من جهة أفران التاج، مجاور مدرسة النوارس، معرض هومنا.</p>
-<div class="links" style="margin-top:12px"><a class="btn" href="https://maps.app.goo.gl/FpvxK3dmupMrJxxa8" target="_blank">افتح الموقع على الخريطة <small>Google Maps ↗</small></a></div></section>
-<footer>Homena Group · هومنا<br>نسخة أولية للمراجعة؛ حرف H مؤقت إلى حين إضافة الشعار الأصلي.</footer>
-</main></body></html>
+:root {
+  --wine:#7A1C1C;
+  --dark:#660000;
+  --light:#9E3B3B;
+  --soft:#f7f3f3;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  margin:0;
+  background:var(--soft);
+  color:#242020;
+  font-family:Tahoma,Arial,sans-serif;
+}
+
+main {
+  width:min(100% - 28px,520px);
+  margin:26px auto 30px;
+}
+
+header {
+  background:linear-gradient(145deg,var(--dark),var(--wine) 65%,var(--light));
+  color:white;
+  border-radius:22px;
+  padding:32px 20px;
+  text-align:center;
+  box-shadow:0 8px 24px #66000020;
+  animation:fadeDown .8s ease both;
+}
+
+.logo {
+  width:84px;
+  height:84px;
+  border:2px solid #ffffff80;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  margin:0 auto 12px;
+  font-size:27px;
+  font-weight:bold;
+  background:#ffffff15;
+}
+
+h1 {
+  font-size:29px;
+  margin:8px 0;
+}
+
+header p {
+  margin:10px 0;
+  line-height:1.9;
+}
+
+.en {
+  direction:ltr;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+section {
+  background:#fff;
+  border-radius:18px;
+  padding:20px;
+  margin-top:16px;
+  box-shadow:0 4px 15px #00000008;
+  border:1px solid #eee5e5;
+  animation:fadeUp .7s ease both;
+}
+
+section:nth-of-type(2){animation-delay:.1s}
+section:nth-of-type(3){animation-delay:.2s}
+section:nth-of-type(4){animation-delay:.3s}
+section:nth-of-type(5){animation-delay:.4s}
+
+h2 {
+  font-size:19px;
+  color:var(--wine);
+  margin:0 0 16px;
+}
+
+.links {
+  display:grid;
+  gap:11px;
+}
+
+a.btn {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:15px;
+  border:1px solid #eadede;
+  border-radius:13px;
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:700;
+  background:white;
+  min-height:53px;
+  transition:transform .2s,background .2s,box-shadow .2s;
+}
+
+a.btn:hover {
+  transform:translateY(-3px);
+  background:#faf4f4;
+  box-shadow:0 5px 13px #66000015;
+}
+
+a.btn:active {
+  transform:scale(.98);
+}
+
+a.btn small {
+  font-weight:400;
+  color:#777;
+  direction:ltr;
+  text-align:left;
+  font-size:12px;
+}
+
+.store {
+  background:linear-gradient(120deg,var(--dark),var(--wine));
+  color:white!important;
+  border-color:var(--wine)!important;
+}
+
+.store small {
+  color:#f4dddd!important;
+}
+
+.contact {
+  background:var(--wine)!important;
+  color:white!important;
+  border-color:var(--wine)!important;
+}
+
+.contact small {
+  color:#f5dddd!important;
+}
+
+.address {
+  line-height:2;
+  margin:0;
+  font-size:14px;
+}
+
+footer {
+  text-align:center;
+  color:#777;
+  font-size:12px;
+  padding:22px 8px;
+  line-height:1.9;
+}
+
+@keyframes fadeUp {
+  from {opacity:0;transform:translateY(18px)}
+  to {opacity:1;transform:translateY(0)}
+}
+
+@keyframes fadeDown {
+  from {opacity:0;transform:translateY(-15px)}
+  to {opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:380px) {
+  main {
+    width:calc(100% - 20px);
+    margin-top:15px;
+  }
+
+  header {
+    padding:25px 15px;
+  }
+
+  h1 {
+    font-size:25px;
+  }
+
+  section {
+    padding:15px;
+  }
+
+  a.btn {
+    padding:13px 11px;
+    font-size:13px;
+  }
+
+  a.btn small {
+    font-size:11px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+</head>
+
+<body>
+<main>
+
+<header>
+  <div class="logo">H</div>
+  <h1>هومنا</h1>
+  <div class="en">HOMENA GROUP</div>
+  <p>كل روابطنا وخدماتنا في مكان واحد</p>
+</header>
+
+<section>
+<h2>تسوّق وتعرّف علينا</h2>
+<div class="links">
+
+<a class="btn store" href="https://homenaiq.com/" target="_blank" rel="noopener">
+الموقع الرسمي <small>Website ↗</small>
+</a>
+
+<a class="btn store" href="https://play.google.com/store/apps/details?id=com.homena.store" target="_blank" rel="noopener">
+تطبيق أندرويد <small>Google Play ↗</small>
+</a>
+
+<a class="btn store" href="https://apps.apple.com/iq/app/%D9%87%D9%88%D9%85%D9%86%D8%A7-homena/id6825592243?l=ar" target="_blank" rel="noopener">
+تطبيق آيفون <small>App Store ↗</small>
+</a>
+
+</div>
+</section>
+
+<section>
+<h2>تابعونا على مواقع التواصل</h2>
+<div class="links">
+
+<a class="btn" href="https://www.instagram.com/homena.21/" target="_blank" rel="noopener">
+إنستغرام <small>@homena.21 ↗</small>
+</a>
+
+<a class="btn" href="https://www.facebook.com/share/1KCzt2sTtB/" target="_blank" rel="noopener">
+فيسبوك <small>Facebook ↗</small>
+</a>
+
+<a class="btn" href="https://www.tiktok.com/@homena43" target="_blank" rel="noopener">
+تيك توك <small>@homena43 ↗</small>
+</a>
+
+</div>
+</section>
+
+<section>
+<h2>أرقام التواصل</h2>
+<div class="links">
+
+<a class="btn contact" href="tel:07717408640">
+الإدارة <small>0771 740 8640</small>
+</a>
+
+<a class="btn" href="tel:07708178272">
+المبيعات <small>0770 817 8272</small>
+</a>
+
+<a class="btn" href="tel:07770651779">
+المبيعات <small>0777 065 1779</small>
+</a>
+
+<a class="btn" href="tel:07702461179">
+الصيانة <small>0770 246 1179</small>
+</a>
+
+<a class="btn" href="tel:07770651779">
+الرقم العام <small>0777 065 1779</small>
+</a>
+
+<a class="btn" href="mailto:info@homenaiq.com">
+البريد الإلكتروني <small>info@homenaiq.com</small>
+</a>
+
+</div>
+</section>
+
+<section>
+<h2>زوروا معرضنا</h2>
+
+<p class="address">
+بغداد – الأمين الثانية، مدخل مدرسة الجمهورية، من جهة أفران التاج، مجاور مدرسة النوارس، معرض هومنا.
+</p>
+
+<div class="links" style="margin-top:14px">
+<a class="btn contact" href="https://maps.app.goo.gl/FpvxK3dmupMrJxxa8" target="_blank" rel="noopener">
+افتح الموقع على الخريطة <small>Google Maps ↗</small>
+</a>
+</div>
+</section>
+
+<footer>
+Homena Group · هومنا
+<br>
+كل الأجهزة بيتك بضغطة زر
+</footer>
+
+</main>
+</body>
+</html>
